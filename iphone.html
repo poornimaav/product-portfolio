@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <div class="product-box">
+                <div class="all-images">
+                <div class="small-images">
+                    <img src="photo1.jpg" onclick="clicking(this)" >
+                    <img src="photo2.jpg" onclick="clicking(this)" alt="">
+                    <img src="photo3.jpg" onclick="clicking(this)" alt="">
+                    <img src="photo4.jpg" onclick="clicking(this)" alt="">
+                </div>
+                <div class="main-images">
+                    <img src="photo1.jpg" id="imagebox">
+                </div>
+            </div>
+            </div>
+            <div class="text">
+                <div class="content">
+                    <p class="brand">Brand:Apple</p>
+                    <h2>Apple iPhone 14 (blue, 256GB)</h2>
+                    <div class="review">
+                        <span>(4.6)</span>
+                        <span class="fa fa-star"></span>
+
+                    </div>
+                    <div class="price-box">
+                        <p class="price">&#8377;81,999</p>
+                        <span>M.R.P.: <strike>&#8377; 89,999</strike></span>
+                    </div>
+                    <div class="para">
+                    <p>Size: <select name="size">
+                        <option value="select colour">Select colour</option>
+                        <option value="Midnight">Midnight</option>
+                        <option value="blue">Blue</option>
+                        <option value="Starlight">Starlight</option>
+                        <option value="purple">Purple</option>
+                </select></p>
+                <p>Quantity <input type="text" value="1"></p>
+                </div>
+                <div class="btnn">
+                <button>
+                    <i class="fa fa-shopping-cart" ></i>
+                    Add to Cart
+                </button>
+                <button class="buy">
+                    <i class="fa fa-shopping-cart"></i>
+                    Buy now
+                </button>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function clicking(smallImg) {
+            var fullImg = document.getElementById("imagebox");
+            fullImg.src = smallImg.src;
+        }
+    </script>
+    
+</body>
+</html>
